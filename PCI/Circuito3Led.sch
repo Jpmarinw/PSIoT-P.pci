@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="1.27" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -6745,124 +6745,125 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="ESP32-DEVKITV1" deviceset="ESP32DEVKITV1" device=""/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="-LUMILED" package3d_urn="urn:adsk.eagle:package:15827/1"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="-LUMILED" package3d_urn="urn:adsk.eagle:package:15827/1"/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="-LUMILED" package3d_urn="urn:adsk.eagle:package:15827/1"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="330"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="330"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="330"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="330"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="330"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="330"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="147.32" y="-2.54" size="1.778" layer="91">R1, R2 e R3 = 330R
+LED1 = VERMELHOR
+LED2 = AZUL
+LED3 = AMARELO</text>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="36.83" y="53.34" smashed="yes">
-<attribute name="NAME" x="10.16" y="58.42" size="1.27" layer="95" rot="R90"/>
+<instance part="U$1" gate="G$1" x="35.56" y="35.56" smashed="yes">
+<attribute name="NAME" x="8.89" y="40.64" size="1.27" layer="95" rot="R90"/>
 </instance>
-<instance part="LED1" gate="G$1" x="80.01" y="67.31" smashed="yes" rot="R90">
-<attribute name="NAME" x="84.582" y="70.866" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="84.582" y="73.025" size="1.778" layer="96" rot="R180"/>
+<instance part="LED1" gate="G$1" x="104.14" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="108.712" y="56.896" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="108.712" y="59.055" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED2" gate="G$1" x="80.01" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="84.582" y="56.896" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="84.582" y="59.055" size="1.778" layer="96" rot="R180"/>
+<instance part="LED2" gate="G$1" x="104.14" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="108.712" y="41.656" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="108.712" y="43.815" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED3" gate="G$1" x="81.28" y="39.37" smashed="yes" rot="R90">
-<attribute name="NAME" x="85.852" y="42.926" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="85.852" y="45.085" size="1.778" layer="96" rot="R180"/>
+<instance part="LED3" gate="G$1" x="104.14" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="108.712" y="26.416" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="108.712" y="28.575" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R2" gate="G$1" x="109.22" y="53.34" smashed="yes">
-<attribute name="NAME" x="105.41" y="54.8386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="105.41" y="50.038" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="78.74" y="53.34" smashed="yes">
+<attribute name="NAME" x="74.93" y="54.8386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.93" y="50.038" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="109.22" y="67.31" smashed="yes">
-<attribute name="NAME" x="105.41" y="68.8086" size="1.778" layer="95"/>
-<attribute name="VALUE" x="105.41" y="64.008" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="78.74" y="38.1" smashed="yes">
+<attribute name="NAME" x="74.93" y="39.5986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.93" y="34.798" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="109.22" y="39.37" smashed="yes">
-<attribute name="NAME" x="105.41" y="40.8686" size="1.778" layer="95"/>
-<attribute name="VALUE" x="105.41" y="36.068" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="78.74" y="22.86" smashed="yes">
+<attribute name="NAME" x="74.93" y="24.3586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.93" y="19.558" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="127" y="30.48" smashed="yes">
-<attribute name="VALUE" x="124.46" y="27.94" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="129.54" y="12.7" smashed="yes">
+<attribute name="VALUE" x="127" y="10.16" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@2"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-2.54" x2="121.92" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-2.54" x2="121.92" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="121.92" y1="15.24" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="109.22" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="53.34" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="121.92" y1="38.1" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="22.86" x2="121.92" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="109.22" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO15"/>
-<wire x1="19.05" y1="35.56" x2="19.05" y2="26.67" width="0.1524" layer="91"/>
-<wire x1="19.05" y1="26.67" x2="78.74" y2="26.67" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="78.74" y1="26.67" x2="78.74" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="17.78" x2="17.78" y2="0" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="0" x2="71.12" y2="0" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="0" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO2"/>
-<wire x1="21.59" y1="35.56" x2="21.59" y2="29.21" width="0.1524" layer="91"/>
-<wire x1="21.59" y1="29.21" x2="76.2" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="76.2" y1="29.21" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="53.34" x2="77.47" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="17.78" x2="20.32" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="2.54" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="2.54" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO4"/>
-<wire x1="24.13" y1="35.56" x2="24.13" y2="31.75" width="0.1524" layer="91"/>
-<wire x1="24.13" y1="31.75" x2="72.39" y2="31.75" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="72.39" y1="31.75" x2="72.39" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="72.39" y1="67.31" x2="77.47" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="5.08" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="85.09" y1="67.31" x2="104.14" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<junction x="104.14" y="67.31"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="83.82" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="83.82" y1="53.34" x2="85.09" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="85.09" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
-<junction x="85.09" y="53.34"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="53.34" x2="105.41" y2="53.34" width="0.1524" layer="91"/>
-<junction x="104.14" y="53.34"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="83.82" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="85.09" y1="39.37" x2="86.36" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="86.36" y1="39.37" x2="104.14" y2="39.37" width="0.1524" layer="91"/>
-<junction x="86.36" y="39.37"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="39.37" x2="105.41" y2="39.37" width="0.1524" layer="91"/>
-<junction x="104.14" y="39.37"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="114.3" y1="67.31" x2="127" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="127" y1="67.31" x2="127" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="127" y1="33.02" x2="127" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="127" y1="39.37" x2="127" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="127" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="39.37" x2="127" y2="39.37" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="83.82" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -6871,6 +6872,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
